@@ -374,3 +374,17 @@ width: 70%;
   padding: 20px;
   align-items: center;
 }
+.new-image-thumbnail {
+  height: 80px;
+  width: 80px;
+}
+.chart-container {
+  border-bottom: 3px solid #0071bd;
+}
+.exchanges-table {
+  display: block;
+}
+.crypto-logo {
+  height: 25px;
+  width: 25px;
+}
