@@ -381,10 +381,13 @@ width: 70%;
 .chart-container {
   border-bottom: 3px solid #0071bd;
 }
-.exchanges-table {
-  display: block;
-}
+
 .crypto-logo {
   height: 25px;
   width: 25px;
+}
+.iconUrl {
+  padding: 1px !important;
+  height: 20px !important;
+  width: 20px !important;
 }

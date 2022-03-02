@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Select, Typography, Row, Col, Avatar, Card} from 'antd'
 import moment from 'moment';
+import Loader from './Loader';
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cyptoApi'
 
@@ -13,7 +14,7 @@ const News = ({simplified}) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
   const {data, isFetching} = useGetCryptosQuery(100)
 
-  if(!cryptoNews?.value || isFetching) return 'Loading...'
+  if(!cryptoNews?.value || isFetching) return <Loader/>
   
   return (
     <Row gutter={[24,24]}>
